@@ -18,3 +18,9 @@ export default function Home({host}) {
     </div>
   )
 }
+
+export async function getServerSideProps(context) {
+  return {
+    props: { host: context.req.headers.host }, // will be passed to the page component as props
+  }
+}
