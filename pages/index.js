@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import absoluteUrl from 'next-absolute-url'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
@@ -15,7 +14,7 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome to {host}!
+          Welcome to {process.env.VERCEL_URL}!
         </h1>
       </main>
 
