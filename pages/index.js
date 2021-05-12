@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 
-export default function Home() {
+export default function Home({host}) {
   return (
     <div className={styles.container}>
       <Head>
@@ -11,7 +11,7 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome to {process.env.VERCEL_URL}!
+          Welcome to {host}!
         </h1>
       </main>
 
