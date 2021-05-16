@@ -24,7 +24,7 @@ export default function Home({host}) {
       </Head>
 
       <a href={`https://expa.com/?ref=${host}`}>
-        <Image src="/expa.svg" width="100" height="21" />
+        <img src="/expa.png" width="130" height="28" />
       </a>
 
       <div className="content">
