@@ -1,6 +1,16 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 
+export const config = {
+  unstable_runtimeJS: false
+};
+
+export async function getServerSideProps(context) {
+  return {
+    props: { host: context.req.headers.host }
+  }
+}
+
 export default function Home({host}) {
   return (
     <div className={styles.container}>
@@ -17,10 +27,4 @@ export default function Home({host}) {
 
     </div>
   )
-}
-
-export async function getServerSideProps(context) {
-  return {
-    props: { host: context.req.headers.host }, // will be passed to the page component as props
-  }
 }
