@@ -29,7 +29,9 @@ export default function Home({host}) {
 
       <div className="content">
         <h1>{host}</h1>
-        <p className="mono">Coming soon from <a href={`https://expa.com/?ref=${host}`}>Expa</a></p>
+        <p className="mono">
+          Coming soon from <a href={`https://expa.com/?ref=${host}`}>Expa</a>
+        </p>
       </div>
 
       <div className="footer">
