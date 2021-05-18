@@ -23,6 +23,25 @@ export default function Home({host}) {
         <meta content={host} property="twitter:title"/>
         <meta content="Coming soon from Expa" property="twitter:description"/>
         <meta content="/expa_og.png" property="twitter:image"/>
+
+        {/* Google Analytics */}
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=UA-40576422-1"
+        />
+
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){ dataLayer.push(arguments); }
+              gtag('js', new Date());
+              gtag('config', 'UA-40576422-1', {
+                'anonymize_ip': false
+              });
+            `,
+          }}
+        />
       </Head>
 
       <header>
