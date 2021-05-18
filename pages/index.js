@@ -1,7 +1,6 @@
 import Head from 'next/head'
-import Image from 'next/image'
 
-// Disable CSR
+// Disable client side JS
 export const config = { unstable_runtimeJS: false };
 
 // Pass host as prop

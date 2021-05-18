@@ -34,11 +34,12 @@ body {
 }
 
 main {
-  padding: min(8vw, 3rem);
   width: 100%;
   height: 100vh;
   max-height: -moz-fill-available;
   max-height: -webkit-fill-available;
+  box-sizing: content-box;
+  padding: min(8vw, 3rem);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
