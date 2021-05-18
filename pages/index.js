@@ -1,6 +1,6 @@
 import Head from 'next/head'
 
-// Disable CSR
+// Disable client side JS
 export const config = { unstable_runtimeJS: false };
 
 // Pass host as prop
@@ -12,10 +12,11 @@ export default function Home({host}) {
   return (
     <main>
       <Head>
-        <title>Coming soon • {host}</title>
-        <meta content="width=device-width, initial-scale=1" name="viewport"/>
-        <meta content={`Coming soon • ${host}`} property="og:title"/>
-        <meta content={`Coming soon • ${host}`} property="twitter:title"/>
+        <title>{host}</title>
+        <meta name="description" content="Coming soon" />
+        <meta content={host} property="og:title" />
+        <meta content={host} property="twitter:title" />
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
       </Head>
 
       <div className="content">
