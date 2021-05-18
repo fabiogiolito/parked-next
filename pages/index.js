@@ -25,22 +25,24 @@ export default function Home({host}) {
         <meta content="/expa_og.png" property="twitter:image"/>
       </Head>
 
-      <a href={`https://expa.com/?ref=${host}`}>
-        <img src="/expa.png" width="130" height="28" />
-      </a>
+      <header>
+        <a href={`https://expa.com/?ref=${host}`}>
+          <img src="/expa.png" width="100" height="22" />
+        </a>
+      </header>
 
-      <div className="content">
+      <article>
         <h1>{host}</h1>
         <p className="mono">
           Coming soon from <a href={`https://expa.com/?ref=${host}`}>Expa</a>
         </p>
-      </div>
+      </article>
 
-      <div className="footer">
+      <footer>
         <hr />
         <span><small>&copy;</small> Expa</span>
         <a href={`mailto:hello@expa.com?subject=${host}&body=%0D%0A%0D%0A--%0D%0Acontact%20from%20${host}`}>Contact us</a>
-      </div>
+      </footer>
 
     </main>
   )
